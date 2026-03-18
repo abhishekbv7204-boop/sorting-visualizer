@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Search visualizer</h1>
+
+<div class="controls">
+    <button onclick="generateArray()">Generate Array</button>
+
+    <input type="number" id="searchValue" placeholder="enter num">
+
+    <button onclick="linearSearch()">Linear Search</button>
+    <button onclick="binarySearch()">Binary Search</button>
+
+    <br><br>
+
+    <label>Speed:</label>
+    <input type="range" id="speedSlider" min="10" max="500" value="100">
+</div>
+
+<div id="array"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
