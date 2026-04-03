@@ -4,7 +4,6 @@ let isRunning=false;
 document.getElementById("speedSlider").addEventListener("input",function () {
     speed=600-this.value; 
 });
-
 function toggleButtons(disable) {
     document.querySelectorAll("button").forEach(btn => {
         btn.disabled=disable;
@@ -90,7 +89,6 @@ async function binarySearch() {
         else {
             high=mid-1;
         }
-
         resetBars();
     }
     alert("elem not found");
